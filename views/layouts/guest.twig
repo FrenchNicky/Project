@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="turbolinks-cache-control" content="no-cache">
+	<meta name="robots" content="noindex, nofollow">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/guest.css">
+</head>
+<body>
+	<main role="main">
+		<section class="content" id="content">
+			{% block content %}{% endblock %}
+		</section>
+	</main>
+	<script src="socket.io/socket.io.js"></script>
+	<script src="js/guest.js" data-turbolinks-eval="false" data-turbolinks-suppress-warning></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "ES2015",
+		"baseUrl": "./",
+		"rootDir": "./",
+		"outDir": "build",
+		"sourceMap": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"noImplicitAny": false,
+		"lib": [
+			"ES2015",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"types": [
+			"@types/express",
+			"@types/express-serve-static-core"
+		],
+		"paths": {
+			"App/*": ["./app/*"],
+			"Start/*": ["./start/*"]
+		}
+	},
+	"include": [
+		"**/*"
+	],
+	"exclude": [
+		"node_modules",
+		"build",
+		"resources"
+	]
+}
