@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import * as path from 'path'
-import Ws from 'Start/socket'
+import ServiceWs from 'App/Services/Ws'
 
 export class Home {
 	public index(req: Request, res: Response) {
